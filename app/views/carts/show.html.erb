@@ -1,0 +1,12 @@
+<h1>Your Cart</h1>
+
+<!-- iterated items -->
+<% @items.each do |item, quantity| %>
+  Title:<p><%= item.title %></p>
+  <img class="img-thumbnail" src="<%= item.image %>" alt="delicious <%= item.title %>" height="100" width="100"/><br>
+  Description:<p><%= item.description %></p>
+  Price:<p><%= number_to_currency(item.price) %></p>
+  Quantity:<%= quantity %>
+<% end %>
+<!-- total -->
+Total: <%= number_to_currency(@total) %>

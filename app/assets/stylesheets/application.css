@@ -13,3 +13,23 @@
  *= require_tree .
  *= require_self
  */
+
+ .jumbotron.nuts {
+       width:100%;
+       height:300px;
+       background:
+       linear-gradient(
+         rgba(0, 0, 0, 0.45),
+         rgba(0, 0, 0, 0.25)
+         ),
+         url(http://boltsnuts.com.au/wp-content/uploads/2015/10/bigstock-bolts-nuts-screws-54640064-e1446090357363.jpg);
+       background-size:cover;
+       margin-bottom: 0px;
+
+     }
+
+#header_title {
+  color: white;
+  font-size: 100px;
+  text-align: center;
+}
